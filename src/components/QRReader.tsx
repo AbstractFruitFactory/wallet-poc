@@ -43,6 +43,9 @@ export const QRReader = () => {
         }}
         // @ts-ignore
         style={{ width: "100%" }}
+        constraints={{
+          facingMode: 'environment'
+        }}
       />
       <p>{data}</p>
     </>
